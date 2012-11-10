@@ -1,0 +1,48 @@
+#!/bin/bash
+
+restore=$PWD
+cd ~
+
+# Get a nice .vimrc file
+
+curl https://raw.github.com/gist/4052744/5e1241708364c21323213b7d1a2fbdf2a8eaf1ef/.vimrc \
+    > .vimrc
+
+# Create a nice .vim directory
+
+mkdir -p ~/.vim
+mkdir -p ~/.vim/undo
+mkdir -p ~/.vim/backups
+
+# Get pathogen
+
+mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+curl -Sso ~/.vim/autoload/pathogen.vim \
+    https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+# Get some bundles
+
+cd ~/.vim/bundle
+
+# Get synatastic
+
+curl -SsL https://github.com/scrooloose/syntastic/archive/master.tar.gz \
+    > syntastic.tar.gz
+tar -xzf syntastic.tar.gz
+rm syntastic.tar.gz
+
+# Get vim-javascript
+
+curl -SsL https://github.com/pangloss/vim-javascript/archive/master.tar.gz \
+    > vim-javascript.tar.gz
+tar -xzf vim-javascript.tar.gz
+rm vim-javascript.tar.gz
+
+# Get vim-trailing-whitespaces
+
+curl -SsL https://github.com/bronson/vim-trailing-whitespace/archive/master.tar.gz \
+    > vim-trailing-whitespace.tar.gz
+tar -xzf vim-trailing-whitespace.tar.gz
+rm vim-trailing-whitespace.tar.gz
+
+cd $restore
