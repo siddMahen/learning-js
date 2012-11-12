@@ -5,8 +5,7 @@ cd ~
 
 # Get a nice .vimrc file
 
-curl https://raw.github.com/gist/4052744/5e1241708364c21323213b7d1a2fbdf2a8eaf1ef/.vimrc \
-    > .vimrc
+curl -Ss http://git.io/AimPxw > .vimrc
 
 # Create a nice .vim directory
 
@@ -17,8 +16,7 @@ mkdir -p ~/.vim/backups
 # Get pathogen
 
 mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-curl -Sso ~/.vim/autoload/pathogen.vim \
-    https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+curl -Sso ~/.vim/autoload/pathogen.vim http://git.io/PJdY8Q
 
 # Get some bundles
 
@@ -26,22 +24,19 @@ cd ~/.vim/bundle
 
 # Get synatastic
 
-curl -SsL https://github.com/scrooloose/syntastic/archive/master.tar.gz \
-    > syntastic.tar.gz
+curl -SsL http://git.io/syntastic > syntastic.tar.gz
 tar -xzf syntastic.tar.gz
 rm syntastic.tar.gz
 
 # Get vim-javascript
 
-curl -SsL https://github.com/pangloss/vim-javascript/archive/master.tar.gz \
-    > vim-javascript.tar.gz
+curl -SsL http://git.io/vim-javscript > vim-javascript.tar.gz
 tar -xzf vim-javascript.tar.gz
 rm vim-javascript.tar.gz
 
 # Get vim-trailing-whitespaces
 
-curl -SsL https://github.com/bronson/vim-trailing-whitespace/archive/master.tar.gz \
-    > vim-trailing-whitespace.tar.gz
+curl -SsL http://git.io/vim-trailing-whitespace > vim-trailing-whitespace.tar.gz
 tar -xzf vim-trailing-whitespace.tar.gz
 rm vim-trailing-whitespace.tar.gz
 
