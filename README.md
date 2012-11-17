@@ -42,7 +42,7 @@ also become your preferred way to edit text in general.
 To quickly setup Vim before we begin, please run the following command in this
 projects root directory:
 
-    $ ./setup
+    $ ./setup.sh
 
 For a gentle introduction to Vim, please run the `vimtutor` command on the
 command line.

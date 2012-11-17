@@ -1,26 +1,25 @@
-#!/bin/bash
+#!/bin/sh
 
 restore=$PWD
-cd ~
+cd $HOME
 
 # Get a nice .vimrc file
 
-curl -Ss http://git.io/AimPxw > .vimrc
+curl -SsLo .vimrc http://git.io/AimPxw
 
 # Create a nice .vim directory
 
-mkdir -p ~/.vim
-mkdir -p ~/.vim/undo
-mkdir -p ~/.vim/backups
+mkdir -p .vim
+mkdir -p .vim/undo .vim/backups
+mkdir -p .vim/autoload .vim/bundle
 
 # Get pathogen
 
-mkdir -p ~/.vim/autoload ~/.vim/bundle; \
-curl -Sso ~/.vim/autoload/pathogen.vim http://git.io/PJdY8Q
+curl -SsLo .vim/autoload/pathogen.vim http://git.io/PJdY8Q
 
 # Get some bundles
 
-cd ~/.vim/bundle
+cd .vim/bundle
 
 # Get synatastic
 
