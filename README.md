@@ -2,6 +2,14 @@
 
 Let's learn some javascript!
 
+To download these lessons, type the following commands in the terminal
+window:
+
+```
+$ curl -L http://git.io/_ScX3Q | tar -xz
+$ mv learning-js-master
+```
+
 ## Getting Started
 
 Before we can begin these tutorials, you're going to have to install
