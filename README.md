@@ -7,7 +7,6 @@ window:
 
 ```
 $ curl -L http://git.io/_ScX3Q | tar -xz
-$ cd learning-js-master
 ```
 
 ## Getting Started
