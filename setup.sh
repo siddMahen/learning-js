@@ -39,4 +39,10 @@ curl -SsL http://git.io/vim-trailing-whitespace > vim-trailing-whitespace.tar.gz
 tar -xzf vim-trailing-whitespace.tar.gz
 rm vim-trailing-whitespace.tar.gz
 
+# Get fugitive
+
+curl -SsL http://git.io/oH2oWw > vim-fugitive.tar.gz
+tar -xzf vim-fugitive.tar.gz
+rm vim-fugitive.tar.gz
+
 cd $restore
